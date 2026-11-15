@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://cjcu1rt70qhgi"]
+
+[ext_resource type="Script" uid="uid://bi6sd4difhxvm" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control" unique_id=1876844686]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1923792642]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1587390881]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1491933007]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "MOONBASE ACADEMY"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MarginContainer/VBoxContainer" unique_id=233685674]
+layout_mode = 2
+text = "Can you keep a lunar base running?"
+horizontal_alignment = 1
+
+[node name="Resources" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1613180403]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="OxygenPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Resources" unique_id=662543541]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OxygenLabel" type="Label" parent="MarginContainer/VBoxContainer/Resources/OxygenPanel" unique_id=1332482130]
+layout_mode = 2
+text = "OXYGEN RESERVES"
+horizontal_alignment = 1
+
+[node name="OxygenBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/Resources/OxygenPanel" unique_id=1081653968]
+custom_minimum_size = Vector2(250, 35)
+layout_mode = 2
+value = 80.0
+
+[node name="EnergyPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Resources" unique_id=852734819]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EnergyPanel" type="Label" parent="MarginContainer/VBoxContainer/Resources/EnergyPanel" unique_id=2083359943]
+layout_mode = 2
+text = "ENERGY RESERVES"
+horizontal_alignment = 1
+
+[node name="EnergyBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/Resources/EnergyPanel" unique_id=1817300551]
+custom_minimum_size = Vector2(250, 35)
+layout_mode = 2
+value = 70.0
+
+[node name="ResearchPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Resources" unique_id=1602521411]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResearchLabel" type="Label" parent="MarginContainer/VBoxContainer/Resources/ResearchPanel" unique_id=1302090300]
+layout_mode = 2
+text = "SCIENTIFIC PROGRESS"
+horizontal_alignment = 1
+
+[node name="ResearchBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/Resources/ResearchPanel" unique_id=1571958550]
+custom_minimum_size = Vector2(250, 35)
+layout_mode = 2
+
+[node name="RadiationPanel" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Resources" unique_id=283298278]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RadiationLabel" type="Label" parent="MarginContainer/VBoxContainer/Resources/RadiationPanel" unique_id=651271647]
+layout_mode = 2
+text = "RADIATION EXPOSURE"
+horizontal_alignment = 1
+
+[node name="RadiationBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/Resources/RadiationPanel" unique_id=1811481559]
+custom_minimum_size = Vector2(250, 35)
+layout_mode = 2
+value = 20.0
+
+[node name="Controls" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=561994818]
+layout_mode = 2
+
+[node name="OxygenLabel" type="Label" parent="MarginContainer/VBoxContainer/Controls" unique_id=1964762155]
+layout_mode = 2
+text = "🫁 Oxygen Production: 50%"
+
+[node name="OxygenSlider" type="HSlider" parent="MarginContainer/VBoxContainer/Controls" unique_id=1983368006]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+step = 10.0
+value = 50.0
+
+[node name="ResearchLabel" type="Label" parent="MarginContainer/VBoxContainer/Controls" unique_id=436822786]
+layout_mode = 2
+text = "🔬 Research Power: 50%"
+
+[node name="ResearchSlider" type="HSlider" parent="MarginContainer/VBoxContainer/Controls" unique_id=1118592774]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+step = 10.0
+value = 50.0
+
+[node name="SimulateButton" type="Button" parent="MarginContainer/VBoxContainer/Controls" unique_id=993685613]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "SIMULATE NEXT HOUR"
+
+[node name="RestartButton" type="Button" parent="MarginContainer/VBoxContainer/Controls" unique_id=1686556900]
+layout_mode = 2
+text = "RESTART SIMULATION"
+
+[node name="SolarEvent" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=2047769885]
+layout_mode = 2
+
+[node name="SolarEventLabel" type="Label" parent="MarginContainer/VBoxContainer/SolarEvent" unique_id=1195413274]
+layout_mode = 2
+text = "☀️ SPACE WEATHER MONITOR: No active warning"
+
+[node name="SolarChoices" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SolarEvent" unique_id=1971329120]
+layout_mode = 2
+
+[node name="ShelterButton" type="Button" parent="MarginContainer/VBoxContainer/SolarEvent/SolarChoices" unique_id=1393187092]
+layout_mode = 2
+text = "🛡️ PROTECT THE CREW"
+
+[node name="ContinueResearchButton" type="Button" parent="MarginContainer/VBoxContainer/SolarEvent/SolarChoices" unique_id=222618717]
+layout_mode = 2
+text = "🔬 CONTINUE RESEARCH"
+
+[node name="Results" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1877257886]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="MarginContainer/VBoxContainer/Results" unique_id=1646583637]
+layout_mode = 2
+text = "SYSTEM STATUS: STABLE"
+
+[node name="ExplanationLabel" type="Label" parent="MarginContainer/VBoxContainer/Results" unique_id=818891698]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Adjust the controls and simulate the next hour to see how your decisions affect the lunar base."
+autowrap_mode = 2
