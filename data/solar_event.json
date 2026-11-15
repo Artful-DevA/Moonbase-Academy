@@ -1,0 +1,11 @@
+{
+  "date": "2024-05-11",
+  "event_type": "Solar Energetic Particle (SEP)",
+  "event_time_utc": "2024-05-11T04:07:00Z",
+  "event_id": "2024-05-11T04:07:00-SEP-001",
+  "instrument": "STEREO A (IMPACT 13-100 MeV)",
+  "source": "NASA CCMC DONKI",
+  "source_url": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/30717/1",
+  "interpretation": "Historical spacecraft detection; not a direct radiation measurement on the lunar surface.",
+  "gameplay_disclaimer": "Energy, research, and radiation-risk changes are illustrative classroom simulation units, not measured doses or NASA-calibrated predictions."
+}
